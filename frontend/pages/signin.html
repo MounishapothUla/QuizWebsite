@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Sign In</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/auth.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">QuizMaster</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <div class="user-controls">
+                    <a href="signin.html" class="active">Sign In</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </header>
+
+            <div class="auth-container">
+                <form id="loginForm" class="auth-form">
+                    <h2>Sign In</h2>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit">Sign In</button>
+                    <p class="auth-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+                </form>
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 QuizMaster. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script type="module" src="../js/login.js"></script>
+</body>
+</html>

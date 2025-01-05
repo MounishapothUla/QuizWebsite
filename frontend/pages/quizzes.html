@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Quizzes</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/quizzes.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">QuizMaster</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="quizzes.html" class="active">Quizzes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <div class="user-controls">
+                    <a href="signin.html">Sign In</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </header>
+
+            <div class="content">
+                <h1>Available Quizzes</h1>
+                <div class="quiz-categories">
+                    <div class="quiz-card" data-category="science">
+                        <h3>Science Quiz</h3>
+                        <p>Test your knowledge of scientific concepts</p>
+                        <button onclick="startQuiz('science')">Start Quiz</button>
+                    </div>
+                    <div class="quiz-card" data-category="history">
+                        <h3>History Quiz</h3>
+                        <p>Explore historical events and figures</p>
+                        <button onclick="startQuiz('history')">Start Quiz</button>
+                    </div>
+                    <div class="quiz-card" data-category="geography">
+                        <h3>Geography Quiz</h3>
+                        <p>Challenge yourself with world geography</p>
+                        <button onclick="startQuiz('geography')">Start Quiz</button>
+                    </div>
+                </div>
+
+                <div id="quiz-container" class="quiz-container hidden">
+                    <h2 id="quiz-title">Quiz Title</h2>
+                    <div id="question-container">
+                        <p id="question-text"></p>
+                        <div id="options-container"></div>
+                    </div>
+                    <div class="quiz-controls">
+                        <button id="submit-answer">Submit Answer</button>
+                        <button id="next-question" class="hidden">Next Question</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 QuizMaster. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="../js/quiz.js"></script>
+</body>
+</html>

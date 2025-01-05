@@ -1,0 +1,120 @@
+/* Quiz Styles */
+.quiz-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.quiz-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.quiz-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.quiz-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.quiz-card p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.quiz-card button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.quiz-card button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.quiz-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.quiz-container h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#question-container {
+    margin-bottom: 2rem;
+}
+
+#question-text {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+#options-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.option {
+    background: var(--background-color);
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option:hover {
+    background: #e2e8f0;
+}
+
+.option.selected {
+    background: var(--primary-color);
+    color: white;
+}
+
+.quiz-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.quiz-controls button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.quiz-controls button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.hidden {
+    display: none;
+}
